@@ -42,7 +42,11 @@ export default {
       },
       pagination: {
         el: '.swiper-pagination',
-      },
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `<span style="width: 20px; height: 20px; margin: 0px 10px;" class="` + className + `">` + (index + 1) + `</span>`;
+        }
+      }
     //   simulateTouch: false,
     //   allowTouchMove: false
     });
@@ -92,7 +96,18 @@ export default {
     }
 
     .swiper-pagination-bullet {
-        margin: 0px 5px !important;
+      width: 20px !important;
+      height: 20px !important;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color:#000;
+      opacity: 1;
+      background: rgba(0,0,0,0.2);
+    }
+    .swiper-pagination-bullet-active {
+      color:#fff;
+      background: #007aff;
     }
 
 </style>

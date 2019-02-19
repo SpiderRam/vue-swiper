@@ -2,13 +2,38 @@
 <div id="swiper-wrapper">
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)">
-                <a href="https://github.com/SpiderRam" target="_blank"><div class="clickable"></div></a>
+            <div class="swiper-slide" id="slideOne">
+              <div class="logoWrapper">
+                <img src="../assets/vueLogo.png" class="cubeImage" id="vueLogo">
+              </div>
             </div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/5)"></div>
+            <div class="swiper-slide" id="slideTwo">
+              <div class="logoWrapper">
+                <img src="../assets/polymerLogo.png" class="cubeImage" id="polymerLogo">
+              </div>
+            </div>
+            <div class="swiper-slide" id="slideThree">
+              <div class="logoWrapper">
+                <img src="../assets/kendoLogo.jpg" class="cubeImage" id="polymerLogo">
+                <p id="kendoText">Kendo Charts</p>
+              </div>
+            </div>
+            <div class="swiper-slide" id="slideFour">
+              <div class="logoWrapper">
+                <img src="../assets/cssGridLogo.png" class="cubeImage" id="cssGridLogo">
+              </div>
+            </div>
+            <div class="swiper-slide" id="slideFive">
+              <div class="logoWrapper">
+                <img src="../assets/leafletLogo.jpeg" class="cubeImage" id="leafletLogo">
+              </div>
+            </div>
+            <div class="swiper-slide" id="slideSix">
+              <div class="logoWrapper">
+                <!-- <img src="../assets/leafletLogo.jpeg" class="cubeImage" id="leafletLogo"> -->
+
+              </div>
+            </div>
         </div>
     </div>
     <div class="pagination-wrapper">
@@ -32,6 +57,9 @@ export default {
   mounted() {
     this.mySwiper = new Swiper('.swiper-container', {
       loop: true,
+      // autoplay: {
+      //   delay: 5000,
+      // },
       effect: 'cube',
       grabCursor: true,
       cubeEffect: {
@@ -58,7 +86,6 @@ export default {
     @import '../../node_modules/swiper/dist/css/swiper.min.css';
 
     html, body {
-      /* position: relative; */
       height: 100%;
     }
 
@@ -108,6 +135,57 @@ export default {
     .swiper-pagination-bullet-active {
       color:#fff;
       background: #007aff;
+    }
+
+    .logoWrapper {
+      text-align: center;
+      height: 100%;
+    }
+
+    #slideOne {
+      border: 1px solid black;
+    }
+
+    #vueLogo {
+      margin-top: 20%;
+    }
+
+    #slideTwo {
+      border: 1px solid navy;
+    }
+
+    #polymerLogo {
+      margin-top: 12%;
+    }
+
+    #slideThree {
+      border: 1px solid green;
+    }
+
+    #kendoText {
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    #slideFour {
+      border: 1px solid purple;
+    }
+
+    #cssGridLogo {
+      margin-top: 40%;
+    }
+
+    #slideFive {
+      border: 1px solid darkgray;
+    }
+
+    #leafletLogo {
+      margin-top: 30%;
+    }
+
+    #slideSix {
+      /* width: 25%; */
+      background: linear-gradient(to top right, #fff calc(50% - 1px), #aaa, #fff calc(50% + 1px) )
     }
 
 </style>

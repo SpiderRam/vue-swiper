@@ -2,38 +2,14 @@
 <div id="swiper-wrapper">
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" id="slideOne">
-              <div class="logoWrapper">
-                <img src="../assets/vueLogo.png" class="cubeImage" id="vueLogo">
-              </div>
-            </div>
-            <div class="swiper-slide" id="slideTwo">
-              <div class="logoWrapper">
-                <img src="../assets/polymerLogo.png" class="cubeImage" id="polymerLogo">
-              </div>
-            </div>
-            <div class="swiper-slide" id="slideThree">
-              <div class="logoWrapper">
-                <img src="../assets/kendoLogo.jpg" class="cubeImage" id="polymerLogo">
-                <p id="kendoText">Kendo Charts</p>
-              </div>
-            </div>
-            <div class="swiper-slide" id="slideFour">
-              <div class="logoWrapper">
-                <img src="../assets/cssGridLogo.png" class="cubeImage" id="cssGridLogo">
-              </div>
-            </div>
-            <div class="swiper-slide" id="slideFive">
-              <div class="logoWrapper">
-                <img src="../assets/leafletLogo.jpeg" class="cubeImage" id="leafletLogo">
-              </div>
-            </div>
-            <div class="swiper-slide" id="slideSix">
-              <div class="logoWrapper">
-                <!-- <img src="../assets/leafletLogo.jpeg" class="cubeImage" id="leafletLogo"> -->
-
-              </div>
-            </div>
+            <slide-one></slide-one>
+            <slide-two></slide-two>
+            <slide-three></slide-three>
+            <slide-four></slide-four>
+            <slide-five></slide-five>
+            <slide-six></slide-six>
+            <slide-seven></slide-seven>
+            <slide-eight></slide-eight>
         </div>
     </div>
     <div class="pagination-wrapper">
@@ -44,6 +20,14 @@
 
 <script>
 import Swiper from 'swiper';
+import SlideOneVue from './slides/SlideOne';
+import SlideTwoVue from './slides/SlideTwo.vue';
+import SlideThreeVue from './slides/SlideThree.vue';
+import SlideFourVue from './slides/SlideFour.vue';
+import SlideFiveVue from './slides/SlideFive.vue';
+import SlideSixVue from './slides/SlideSix.vue';
+import SlideSevenVue from './slides/SlideSeven.vue';
+import SlideEightVue from './slides/SlideEight.vue';
 
 export default {
   data() {
@@ -54,12 +38,22 @@ export default {
   props: {
     
   },
+  components: {
+    slideOne: SlideOneVue,
+    slideTwo: SlideTwoVue,
+    slideThree: SlideThreeVue,
+    slideFour: SlideFourVue,
+    slideFive: SlideFiveVue,
+    slideSix: SlideSixVue,
+    slideSeven: SlideSevenVue,
+    slideEight: SlideEightVue
+  },
   mounted() {
     this.mySwiper = new Swiper('.swiper-container', {
       loop: true,
-      // autoplay: {
-      //   delay: 5000,
-      // },
+      autoplay: {
+        delay: 3000,
+      },
       effect: 'cube',
       grabCursor: true,
       cubeEffect: {
@@ -82,7 +76,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
     @import '../../node_modules/swiper/dist/css/swiper.min.css';
 
     html, body {
@@ -140,52 +134,6 @@ export default {
     .logoWrapper {
       text-align: center;
       height: 100%;
-    }
-
-    #slideOne {
-      border: 1px solid black;
-    }
-
-    #vueLogo {
-      margin-top: 20%;
-    }
-
-    #slideTwo {
-      border: 1px solid navy;
-    }
-
-    #polymerLogo {
-      margin-top: 12%;
-    }
-
-    #slideThree {
-      border: 1px solid green;
-    }
-
-    #kendoText {
-      font-weight: bold;
-      font-family: sans-serif;
-    }
-
-    #slideFour {
-      border: 1px solid purple;
-    }
-
-    #cssGridLogo {
-      margin-top: 40%;
-    }
-
-    #slideFive {
-      border: 1px solid darkgray;
-    }
-
-    #leafletLogo {
-      margin-top: 30%;
-    }
-
-    #slideSix {
-      /* width: 25%; */
-      background: linear-gradient(to top right, #fff calc(50% - 1px), #aaa, #fff calc(50% + 1px) )
     }
 
 </style>

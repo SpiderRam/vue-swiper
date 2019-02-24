@@ -1,9 +1,9 @@
 <template>
-  <app-swiper-cube></app-swiper-cube>
+  <app-grid></app-grid>
 </template>
 
 <script>
-import SwiperCubeVue from './components/SwiperCube';
+import GridVue from './components/Grid.vue';
 
 export default {
   data() {
@@ -12,7 +12,7 @@ export default {
     }
   },
   components: {
-    appSwiperCube: SwiperCubeVue
+    appGrid: GridVue
   },
   props: {
     

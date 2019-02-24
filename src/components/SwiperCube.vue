@@ -1,5 +1,5 @@
 <template>
-<div id="swiper-wrapper">
+<div id="wrapper" class="col-sm-12 col-md-5 col-lg-4">
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <slide-one></slide-one>
@@ -83,6 +83,10 @@ export default {
       height: 100%;
     }
 
+    #wrapper {
+        background-color: white;
+    }
+
     body {
       background: #fff;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -96,6 +100,10 @@ export default {
       width: 300px;
       height: 300px;
       margin-top: 5%;
+    }
+
+    .swiper-wrapper {
+      width: 100%;
     }
 
     .swiper-slide {

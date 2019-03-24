@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid">
         <div class="row">
-            <app-header></app-header>            
+            <app-header></app-header>  
         </div>
         <div class="row">
             <app-swiper-cube></app-swiper-cube>            

@@ -16,6 +16,7 @@ export default {
 <style scoped>
     #slideFive {
       border: 1px solid darkgray;
+      background-color: white;
     }
 
     #leafletLogo {

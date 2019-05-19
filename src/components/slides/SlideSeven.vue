@@ -21,6 +21,7 @@ export default {
     #slideSeven {
         border: 1px solid navy;
         position: relative;
+        background-color: white;
     }
 
     #mySqlLogo {

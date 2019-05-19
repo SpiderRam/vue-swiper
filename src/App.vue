@@ -1,5 +1,7 @@
 <template>
-  <app-grid></app-grid>
+  <div id="app">
+    <app-grid></app-grid>
+  </div>
 </template>
 
 <script>
@@ -19,6 +21,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  #app {
+    background-image: linear-gradient(#cfe2cf, #609f60);
+    min-height: 100vh;
+  }
 </style>

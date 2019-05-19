@@ -1,5 +1,5 @@
 <template>
-<div id="wrapper" class="col-sm-12 col-md-5 col-lg-4">
+<div id="wrapper">
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <slide-one></slide-one>
@@ -84,7 +84,8 @@ export default {
     }
 
     #wrapper {
-        background-color: white;
+        background-color: transparent;
+        width: 100%;
     }
 
     body {
@@ -99,7 +100,7 @@ export default {
     .swiper-container {
       width: 300px;
       height: 300px;
-      margin-top: 5%;
+      margin: 5% auto 0 auto;
     }
 
     .swiper-wrapper {

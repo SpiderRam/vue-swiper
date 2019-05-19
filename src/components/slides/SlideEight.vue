@@ -21,6 +21,7 @@ export default {
     #slideEight {
         border: 1px solid black;
         position: relative;
+        background-color: white;
     }
 
     #mongooseLogo {

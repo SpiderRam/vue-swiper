@@ -17,6 +17,7 @@ export default {
 <style scoped>
     #slideThree {
       border: 1px solid green;
+      background-color: white;
     }
 
     #kendoText {

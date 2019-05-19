@@ -15,6 +15,7 @@ export default {
 <style scoped>
     #slideTwo {
       border: 1px solid navy;
+      background-color: white;
     }
 
     #polymerLogo {

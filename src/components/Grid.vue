@@ -4,13 +4,11 @@
             <app-header></app-header>  
         </div>
         <div class="row">
-            <app-swiper-cube></app-swiper-cube>            
-            <app-about></app-about>
-            <app-scroll></app-scroll>            
+            <app-swiper-cube></app-swiper-cube>    
         </div>
-        <div class="row">
+        <!-- <div class="row">
             Footer            
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -31,5 +29,7 @@ export default {
 </script>
 
 <style scoped>
-
+    body {
+    background-image: linear-gradient(#cfe2cf, #609f60);
+  }
 </style>
